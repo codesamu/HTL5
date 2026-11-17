@@ -1,0 +1,17 @@
+# macOS
+.DS_Store
+
+# Python
+__pycache__/
+*.py[cod]
+venv/
+.venv/
+
+# YOLO datasets (downloaded via download_dataset.py — regenerate with that script)
+kisy/YOLO/school_objects/images/
+kisy/YOLO/school_objects/labels/
+fiftyone/
+
+# Model weights and training output
+*.pt
+runs/

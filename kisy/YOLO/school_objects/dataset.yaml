@@ -1,0 +1,10 @@
+names:
+  0: bottle
+  1: cell phone
+  2: cup
+  3: book
+  4: laptop
+  5: scissors
+path: /Users/samuelfronthaler/HTL5/kisy/YOLO/school_objects
+train: ./images/train/
+val: ./images/val/
