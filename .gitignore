@@ -12,6 +12,10 @@ kisy/YOLO/school_objects/images/
 kisy/YOLO/school_objects/labels/
 fiftyone/
 
+# Own YOLO data: keep the raw videos local, commit only the extracted frame photos
+kisy/yolo/own data/**/*.[Mm][Oo][Vv]
+kisy/yolo/own data/**/*.[Mm][Pp]4
+
 # Model weights and training output
 *.pt
 runs/
