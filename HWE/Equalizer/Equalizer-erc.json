@@ -1,0 +1,249 @@
+{
+    "$schema": "https://schemas.kicad.org/erc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-11-25T14:59:07",
+    "ignored_checks": [
+        {
+            "description": "Global label only appears once in the schematic",
+            "key": "single_global_label"
+        },
+        {
+            "description": "Four connection points are joined together",
+            "key": "four_way_junction"
+        },
+        {
+            "description": "SPICE model issue",
+            "key": "simulation_model_issue"
+        },
+        {
+            "description": "Assigned footprint doesn't match footprint filters",
+            "key": "footprint_filter"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning",
+        "exclusion"
+    ],
+    "kicad_version": "10.0.8",
+    "sheets": [
+        {
+            "path": "/",
+            "uuid_path": "/788a03da-31de-4721-a961-480f23e84b54",
+            "violations": [
+                {
+                    "description": "Pins of type Power output and Power output are connected",
+                    "items": [
+                        {
+                            "description": "Symbol V2 Pin 2 [Power output, Line]",
+                            "pos": {
+                                "x": 29.21,
+                                "y": 104.14
+                            },
+                            "uuid": "2a9725de-b433-41d3-94cb-503f7353a05d"
+                        },
+                        {
+                            "description": "Symbol V3 Pin 1 [Power output, Line]",
+                            "pos": {
+                                "x": 29.21,
+                                "y": 104.14
+                            },
+                            "uuid": "5fa7435f-6625-4fe6-bf6f-234d2a7654f1"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_to_pin"
+                },
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Hierarchical Sheet Pin 'Uout'",
+                            "pos": {
+                                "x": 152.4,
+                                "y": 64.77
+                            },
+                            "uuid": "445d07f8-0ea3-4280-8f8b-a16f63db9e7e"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Unconnected wire endpoint",
+                    "items": [
+                        {
+                            "description": "Vertical Wire, length 10.16 mm",
+                            "pos": {
+                                "x": 127.0,
+                                "y": 72.39
+                            },
+                            "uuid": "799152d6-af17-4cc3-b991-b1d5df94dd9c"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "unconnected_wire_endpoint"
+                }
+            ]
+        },
+        {
+            "path": "/HochPass/",
+            "uuid_path": "/788a03da-31de-4721-a961-480f23e84b54/30438278-1505-49c0-ac31-3fea91933325",
+            "violations": []
+        },
+        {
+            "path": "/TiefPass/",
+            "uuid_path": "/788a03da-31de-4721-a961-480f23e84b54/863ea1fd-a02d-41d5-90aa-8548fd4eec4c",
+            "violations": [
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol U1 Pin 2 [-, Input, Line]",
+                            "pos": {
+                                "x": 97.79,
+                                "y": 69.85
+                            },
+                            "uuid": "e6d0cd08-3a2e-4124-9384-a4f48c4e0d00"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Input pin not driven by any Output pins",
+                    "items": [
+                        {
+                            "description": "Symbol U1 Pin 2 [-, Input, Line]",
+                            "pos": {
+                                "x": 97.79,
+                                "y": 69.85
+                            },
+                            "uuid": "e6d0cd08-3a2e-4124-9384-a4f48c4e0d00"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_driven"
+                },
+                {
+                    "description": "Symbol U1 has input pins in units [ B ] that are not placed",
+                    "items": [
+                        {
+                            "description": "Symbol U1 [TL072]",
+                            "pos": {
+                                "x": 105.41,
+                                "y": 67.31
+                            },
+                            "uuid": "9b47e32d-6ac8-433e-9a11-b06fcc44267b"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "missing_input_pin"
+                },
+                {
+                    "description": "Symbol U1 has unplaced units [ B ]",
+                    "items": [
+                        {
+                            "description": "Symbol U1 [TL072]",
+                            "pos": {
+                                "x": 105.41,
+                                "y": 67.31
+                            },
+                            "uuid": "9b47e32d-6ac8-433e-9a11-b06fcc44267b"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "missing_unit"
+                }
+            ]
+        },
+        {
+            "path": "/BandPass/",
+            "uuid_path": "/788a03da-31de-4721-a961-480f23e84b54/b966c6d7-6644-49ae-90e8-639bd7db21a8",
+            "violations": [
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol R10 Pin 1 [Passive, Line]",
+                            "pos": {
+                                "x": 128.27,
+                                "y": 62.23
+                            },
+                            "uuid": "68986f72-3629-486f-94cf-df02a2a3925b"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                }
+            ]
+        },
+        {
+            "path": "/Sum/",
+            "uuid_path": "/788a03da-31de-4721-a961-480f23e84b54/e1f7a179-c719-453c-9e71-f45d957c5665",
+            "violations": [
+                {
+                    "description": "Pin not connected",
+                    "items": [
+                        {
+                            "description": "Symbol U3 Pin 3 [+, Input, Line]",
+                            "pos": {
+                                "x": 119.38,
+                                "y": 76.2
+                            },
+                            "uuid": "08bd8cd9-c6d7-4ec3-b185-e9b05c337a2a"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_connected"
+                },
+                {
+                    "description": "Input pin not driven by any Output pins",
+                    "items": [
+                        {
+                            "description": "Symbol U3 Pin 3 [+, Input, Line]",
+                            "pos": {
+                                "x": 119.38,
+                                "y": 76.2
+                            },
+                            "uuid": "08bd8cd9-c6d7-4ec3-b185-e9b05c337a2a"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "pin_not_driven"
+                },
+                {
+                    "description": "Symbol U3 has input pins in units [ B ] that are not placed",
+                    "items": [
+                        {
+                            "description": "Symbol U3 [TL072]",
+                            "pos": {
+                                "x": 95.25,
+                                "y": 102.87
+                            },
+                            "uuid": "e8276557-5b76-4753-9061-4a18fa1c6d32"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "missing_input_pin"
+                },
+                {
+                    "description": "Symbol U3 has unplaced units [ B ]",
+                    "items": [
+                        {
+                            "description": "Symbol U3 [TL072]",
+                            "pos": {
+                                "x": 95.25,
+                                "y": 102.87
+                            },
+                            "uuid": "e8276557-5b76-4753-9061-4a18fa1c6d32"
+                        }
+                    ],
+                    "severity": "warning",
+                    "type": "missing_unit"
+                }
+            ]
+        }
+    ],
+    "source": "Equalizer.kicad_sch"
+}
